@@ -1,6 +1,9 @@
 # Inherit from the proprietary version
 -include vendor/oppo/OP4AD9/BoardConfigVendor.mk
 
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_CACHEIMAGE_PARTITION_SIZE := 469762048
