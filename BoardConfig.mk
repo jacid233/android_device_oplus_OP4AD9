@@ -42,3 +42,6 @@ TARGET_USES_MKE2FS := true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
+
+# Sepolicy
+include device/qcom/sepolicy/SEPolicy.mk
