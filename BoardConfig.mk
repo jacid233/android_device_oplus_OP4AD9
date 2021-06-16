@@ -1,6 +1,8 @@
 # Inherit from the proprietary version
 -include vendor/oppo/OP4AD9/BoardConfigVendor.mk
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
 TARGET_NO_BOOTLOADER := true
