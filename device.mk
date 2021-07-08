@@ -7,6 +7,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Overlays
+PRODUCT_PACKAGES += \
+    OPPODialerOverlay
+
 # Recovery init
 PRODUCT_PACKAGES += \
 	init.recovery.qcom.rc
