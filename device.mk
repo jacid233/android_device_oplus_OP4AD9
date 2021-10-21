@@ -15,6 +15,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	init.recovery.qcom.rc
 
+# Properties
+include $(LOCAL_PATH)/properties/default.mk
+
 # Telephony & IMS  
 PRODUCT_PACKAGES += \
     ims-ext-common \
