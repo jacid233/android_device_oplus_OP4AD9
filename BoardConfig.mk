@@ -119,3 +119,5 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Inherit from the proprietary version
+include vendor/oppo/OP4AD9/BoardConfigVendor.mk
