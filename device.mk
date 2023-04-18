@@ -24,6 +24,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     Snap
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Overlays-rro
 PRODUCT_PACKAGES += \
     OPPODialerOverlay
