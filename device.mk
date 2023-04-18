@@ -56,6 +56,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
 	init.recovery.qcom.rc
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
