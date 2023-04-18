@@ -2,6 +2,7 @@
 -include vendor/oppo/OP4AD9/BoardConfigVendor.mk
 
 # Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := kona
 TARGET_NO_BOOTLOADER := true
 
 # Partitions
