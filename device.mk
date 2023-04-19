@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 # Fstab
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vendor_overlay/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # HIDL
 PRODUCT_PACKAGES += \
