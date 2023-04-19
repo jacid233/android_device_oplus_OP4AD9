@@ -41,10 +41,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResTarget
 
-# Overlays-rro
-PRODUCT_PACKAGES += \
-    OPPODialerOverlay
-
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResTarget
