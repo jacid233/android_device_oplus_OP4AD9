@@ -1,0 +1,6 @@
+20230419:
+ * build success in eng
+ * The system startup perfect
+ * bugs:
+   - Bluetooth audio break
+   - Overlay not work
