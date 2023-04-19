@@ -45,6 +45,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OPPODialerOverlay
 
+# Overlays - override vendor ones
+PRODUCT_PACKAGES += \
+    FrameworksResTarget
+
+# Overlays - RRO
+PRODUCT_PACKAGES += \
+    OPPODialerOverlay \
+    OPPOFrameworkOverlay \
+    OPPOSettingsOverlay \
+    OPPOSystemUIOverlay \
+    OPPOTelephonyOverlay
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
