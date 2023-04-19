@@ -37,6 +37,10 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# Overlays - override vendor ones
+PRODUCT_PACKAGES += \
+    FrameworksResTarget
+
 # Overlays-rro
 PRODUCT_PACKAGES += \
     OPPODialerOverlay
