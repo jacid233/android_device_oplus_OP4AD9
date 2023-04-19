@@ -1,6 +1,9 @@
 # Inherit from the proprietary version
 -include vendor/oppo/OP4AD9/BoardConfigVendor.mk
 
+BOARD_VENDOR := oppo
+DEVICE_PATH := device/oppo/OP4AD9
+
 BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
@@ -93,6 +96,10 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := kona
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
