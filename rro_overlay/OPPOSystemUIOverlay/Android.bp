@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "OPPODialerOverlay",
-    theme: "OPPODialerOverlay",
+    name: "OPPOSystemUIOverlay",
+    theme: "OPPOSystemUIOverlay",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true
