@@ -1,0 +1,7 @@
+runtime_resource_overlay {
+    name: "LineageSettingsProviderOverlay",
+    theme: "LineageSettingsProviderOverlay",
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}
