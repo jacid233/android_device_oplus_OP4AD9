@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays - RRO
 PRODUCT_PACKAGES += \
+    LineageSettingsProviderOverlay \
     OPPODialerOverlay \
     OPPOFrameworkOverlay \
     OPPOSettingsOverlay \
