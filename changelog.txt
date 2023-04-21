@@ -4,3 +4,11 @@
  * bugs:
    - Bluetooth audio break
    - Overlay not work
+
+20230421:
+ * fingerprint inscreen work
+ * set up switch refresh rate 60/90Hz
+ * bugs:
+   - Bluetooth audio break
+   - 5G
+   - Volte
