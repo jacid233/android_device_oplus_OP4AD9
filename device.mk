@@ -80,6 +80,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Recovery init
 PRODUCT_PACKAGES += \
 	init.recovery.qcom.rc
