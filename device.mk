@@ -60,7 +60,9 @@ PRODUCT_PACKAGES += \
     OPPODialerOverlay \
     OPPOFrameworkOverlay \
     OPPOSystemUIOverlay \
-    OPPOTelephonyOverlay
+    OPPOTelephonyOverlay \
+    TetheringOverlay \
+    WifiOverlay
 
 # NFC
 PRODUCT_PACKAGES += \
