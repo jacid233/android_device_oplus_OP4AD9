@@ -107,19 +107,45 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 GNSS_HIDL_VERSION := 2.0
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket
-BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
+BOARD_KERNEL_IMAGE_NAME := Image
+
+BOARD_BOOT_HEADER_VERSION := 2
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
 TARGET_KERNEL_SOURCE := kernel/oppo/sm8250
-TARGET_KERNEL_CONFIG := op4a79_defconfig
+
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
+BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0xa90000
+BOARD_KERNEL_CMDLINE += kpti=off
+BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
+BOARD_KERNEL_CMDLINE += reboot=panic_warm
+BOARD_KERNEL_CMDLINE += service_locator.enable=1
+BOARD_KERNEL_CMDLINE += swiotlb=2048
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+ifeq ($(TARGET_USES_OSS_KERNEL), true)
+TARGET_KERNEL_CONFIG := vendor/kona-op4ad9_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r383902
+else 
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/oppo/prebuilt-kernel/kernel
+TARGET_KERNEL_CONFIG := vendor/kona-op4ad9_defconfig
+endif
+
+# prebuilt-DTB
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBIMAGE_DIR := device/oppo/prebuilt-kernel/dtb
+
+# prebuilt dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := device/oppo/prebuilt-kernel/dtbo.img
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650

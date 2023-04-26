@@ -266,6 +266,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/oppo/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/touchpanel.kl
