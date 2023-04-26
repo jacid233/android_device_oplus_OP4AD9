@@ -1090,10 +1090,10 @@
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
@@ -1105,18 +1105,18 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0, 0
-        H 195
-        V 121
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
+        M 0,0
+        H 164
+        V 123
         H 0
-        L 0, 0
+        Z
         @left
     </string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">153px</dimen>
-    <dimen name="status_bar_height_landscape">153px</dimen>
+    <dimen name="status_bar_height_portrait">108px</dimen>
+    <dimen name="status_bar_height_landscape">108px</dimen>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
