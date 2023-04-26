@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/oppo/OP4A7A/OP4A7A-vendor.mk)
+$(call inherit-product, vendor/oppo/OP4AD9/OP4AD9-vendor.mk)
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
