@@ -1157,10 +1157,15 @@ vendor/lib64/libqmiservices.so
 odm/bin/oemnvbkdaemon
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
+-system_ext/app/datastatusnotification/datastatusnotification.apk
+-system_ext/app/DeviceInfo/DeviceInfo.apk
+-system_ext/app/embms/embms.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/telephonyservice.xml
+system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
