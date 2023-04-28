@@ -9,3 +9,5 @@
  - inscreen fingerprint IS NOT sensitive
 
  - USB connect to PC IS NOT Toast, So suggest turning on USB configuration from ***Developer options***
+
+ - USB debug IS NOT running in user build
