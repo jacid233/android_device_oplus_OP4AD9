@@ -4,6 +4,17 @@ on boot
     chmod 0666 /dev/stmvl53l1_ranging
     chown system system /dev/stmvl53l1_ranging
 
+    chown system system /proc/touchpanel/tp_fw_update
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chown system system /proc/touchpanel/double_tap_enable
+    chown system system /proc/touchpanel/coordinate
+    chown system system /proc/touchpanel/game_switch_enable
+    chown system system /proc/touchpanel/fp_enable
+    chown system system /proc/touchpanel/baseline_test
+
+    # Disable round limit
+    write /proc/touchpanel/oplus_tp_direction 1
+
 on post-fs
     # Radio
     mkdir /cache/opponvitems 0775 radio radio
