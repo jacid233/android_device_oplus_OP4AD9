@@ -120,13 +120,16 @@
         <param key="hfp_pcm_dev_id" value="39"/>
         <param key="input_mic_max_count" value="4"/>
         <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2019/08/22, Add for oppo config-->
-        <param key="oppo_mic_count" value="3"/>
+        <param key="oppo_mic_count" value="2"/>
         <param key="oppo_speaker_id" value="4"/>
         <param key="oppo_multi_record" value="true"/>
         <param key="SPK_VI_HOSTLESS" value="Tertiary MI2S_TX Hostless Capture"/>
         <param key="PHONE_MIC_LOOPBACK" value="TX3_CDC_DMA Hostless"/>
         <param key="HEADSET_MIC_LOOPBACK" value="TX4_CDC_DMA Hostless"/>
         <!--#Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2019/08/22, Add for oppo config end-->
+        <!--wei.hua@MM.AudioDriver.feature, 2019/12/20, Add for 4ch aec -->
+        <param key="noise_reduction_aec" value="enable"/>
+        <!--wei.hua@MM.AudioDriver.feature, 2019/12/20, Add for 4ch aec end-->
     </config_params>
     <gain_db_to_level_mapping>
         <gain_level_map db="-59" level="5"/>
@@ -216,7 +219,7 @@
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev START -->
         <device name="SND_DEVICE_OUT_DUMMY" acdb_id="15"/>
         <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/10/12, Add for dummy dev END -->
-        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for OPLUS_FEATURE_PHONE_TRANSLATOR START -->
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation START -->
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_STEREO_TRANS" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_VOICE_HANDSET_TRANS" acdb_id="31"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADSET_TRANS" acdb_id="9"/>
@@ -230,7 +233,7 @@
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_TRANS_NO_DL_TTS" acdb_id="158"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC_TRANS_NO_DL_TTS" acdb_id="154"/>
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC_TRANS_NO_DL_TTS" acdb_id="141"/>
-        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for OPLUS_FEATURE_PHONE_TRANSLATOR END -->
+        <!-- Kaijia.Lin@PSW.MM.AudioDriver.HAL, 2019/11/16, Add for voice call translation END -->
         <!--Kai.Lv@MULTIMEDIA.AUDIODRIVER.FEATURE, 2020/04/22, Add for hearing test START -->
         <device name="SND_DEVICE_IN_HANDSET_MIC_HEARING_TEST" acdb_id="91"/>
         <!--Kai.Lv@MULTIMEDIA.AUDIODRIVER.FEATURE, 2020/04/22, Add for hearing test END -->
@@ -316,6 +319,9 @@
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS_SB" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" interface="TX_CDC_DMA_TX_3"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS_SB" interface="TX_CDC_DMA_TX_3"/>
+        <!--wei.hua@MM.AudioDriver.feature, 2019/12/20, Add for 4ch aec -->
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_FDX_AEC" interface="TX_CDC_DMA_TX_3"/>
+        <!--wei.hua@MM.AudioDriver.feature, 2019/12/20, Add for 4ch aec end-->
         <device name="SND_DEVICE_IN_HEADSET_MIC" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC_FLUENCE" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" backend="headset-mic" interface="TX_CDC_DMA_TX_4"/>
