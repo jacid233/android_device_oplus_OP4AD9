@@ -18,3 +18,13 @@
 
  - Crashdump in Livedisplay
 
+
+## 20230429:
+
+### changelog:
+
+ - Fix crashdump in Livedisplay
+
+ - update fingerprint inscreen sensor location
+
+ 
