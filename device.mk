@@ -51,8 +51,10 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # kernel modules
+ifeq ($(PREBUILT_KERNEL_MODULES),true)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oppo/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules)
+endif
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
