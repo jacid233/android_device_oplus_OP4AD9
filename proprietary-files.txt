@@ -1157,7 +1157,7 @@ vendor/lib64/libqmiservices.so
 odm/bin/oemnvbkdaemon
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
--system_ext/app/datastatusnotification/datastatusnotification.apk
+-system_ext/app/datastatusnotification/datastatusnotification.apk|ea611e4f1efc3077adf3054051ead13422927426
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/embms/embms.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
