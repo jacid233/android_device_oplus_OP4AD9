@@ -272,8 +272,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Kernel
+ifeq ($(PREBUILT_KERNEL_MODULES),true)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oppo/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+endif
     
 # Keylayout
 PRODUCT_COPY_FILES += \
