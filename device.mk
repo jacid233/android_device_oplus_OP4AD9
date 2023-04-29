@@ -9,6 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Inherit from MindTheGApps
+ifeq ($(WITH_GAPPS), true)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+TARGET_UNOFFICIAL_BUILD_ID += Gapps
+else
+TARGET_UNOFFICIAL_BUILD_ID += Vanilla
+endif
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
