@@ -1,0 +1,30 @@
+--------- beginning of crash
+11-28 02:54:01.727   598   598 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 598 (init), pid 598 (init)
+11-28 02:54:01.732   598   598 F libc    : crash_dump helper failed to exec
+11-28 02:54:03.822   920   920 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 920 (vendor.lineage.), pid 920 (vendor.lineage.)
+11-28 02:54:03.831  1074  1074 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-28 02:54:03.831  1074  1074 F DEBUG   : LineageOS Version: '18.1-20230428-UNOFFICIAL-OP4AD9'
+11-28 02:54:03.831  1074  1074 F DEBUG   : Build fingerprint: 'OPPO/PDHM00/OP4AD9:11/RKQ1.200710.002/1614141791981:user/release-keys'
+11-28 02:54:03.831  1074  1074 F DEBUG   : Revision: '0'
+11-28 02:54:03.831  1074  1074 F DEBUG   : ABI: 'arm64'
+11-28 02:54:03.832  1074  1074 F DEBUG   : Timestamp: 1970-11-27 18:54:03+0000
+11-28 02:54:03.832  1074  1074 F DEBUG   : pid: 920, tid: 920, name: vendor.lineage.  >>> /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.oppo_OP4A7A <<<
+11-28 02:54:03.832  1074  1074 F DEBUG   : uid: 1000
+11-28 02:54:03.832  1074  1074 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-28 02:54:03.832  1074  1074 F DEBUG   : Abort message: 'PictureAdjustment backend not ready, exiting.'
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x0  0000000000000000  x1  0000000000000398  x2  0000000000000006  x3  0000007fcb0c4e10
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x4  0000000000000000  x5  0000000000000000  x6  0000000000000000  x7  000000000000092e
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x8  00000000000000f0  x9  d921cdb8f05f2743  x10 ffffff80ffffffdf  x11 ffffffc0ffffffdf
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x12 0000007fcb0c4db0  x13 000000000000002e  x14 0030a32bffb05000  x15 0000636cad6a07c5
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x16 0000007e5708bc78  x17 0000007e5706dc20  x18 0000007e5802a000  x19 00000000000000ac
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x20 0000000000000398  x21 00000000000000b2  x22 0000000000000398  x23 00000000ffffffff
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x24 b400007ce6dc2a18  x25 0000000000000000  x26 0000000000000000  x27 0000000000000000
+11-28 02:54:03.832  1074  1074 F DEBUG   :     x28 0000000000000000  x29 0000007fcb0c4e90
+11-28 02:54:03.832  1074  1074 F DEBUG   :     lr  0000007e5701f56c  sp  0000007fcb0c4df0  pc  0000007e5701f598  pst 0000000000001000
+11-28 02:54:03.833  1074  1074 F DEBUG   : backtrace:
+11-28 02:54:03.833  1074  1074 F DEBUG   :       #00 pc 000000000004e598  /apex/com.android.runtime/lib64/bionic/libc.so (abort+176) (BuildId: 6fef2b0ca43a1525af04ae1c6da427de)
+11-28 02:54:03.833  1074  1074 F DEBUG   :       #01 pc 00000000000062a0  /system/lib64/liblog.so (__android_log_default_aborter+12) (BuildId: 5366e53978117d4840723525a9ea5889)
+11-28 02:54:03.833  1074  1074 F DEBUG   :       #02 pc 0000000000013058  /apex/com.android.vndk.v30/lib64/libbase.so (android::base::LogMessage::~LogMessage()+316) (BuildId: ab7b403ff010e225ae8b0990a60d7193)
+11-28 02:54:03.833  1074  1074 F DEBUG   :       #03 pc 0000000000007238  /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.oppo_OP4A7A (vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment::PictureAdjustment(std::__1::shared_ptr<vendor::lineage::livedisplay::V2_0::sdm::SDMController>)+240) (BuildId: 57d9334a473ce585041dccc5e03eaad7)
+11-28 02:54:03.833  1074  1074 F DEBUG   :       #04 pc 000000000000bdc0  /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.oppo_OP4A7A (main+488) (BuildId: 57d9334a473ce585041dccc5e03eaad7)
+11-28 02:54:03.833  1074  1074 F DEBUG   :       #05 pc 0000000000049aec  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+108) (BuildId: 6fef2b0ca43a1525af04ae1c6da427de)
