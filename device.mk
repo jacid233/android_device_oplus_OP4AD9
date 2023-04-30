@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
 # Overlays - RRO
 PRODUCT_PACKAGES += \
     CarrierConfigResStock \
+    CaptivePortalConfig \
     OPPODialerOverlay \
     OPPOFrameworkOverlay \
     OPPOSystemUIOverlay \
