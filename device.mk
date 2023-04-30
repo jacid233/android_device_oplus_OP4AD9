@@ -103,7 +103,8 @@ PRODUCT_PACKAGES += \
 
 # Recovery init
 PRODUCT_PACKAGES += \
-	init.recovery.qcom.rc
+	init.recovery.qcom.rc \
+    init.op4ad9.rc    
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

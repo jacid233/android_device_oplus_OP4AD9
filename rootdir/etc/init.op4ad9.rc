@@ -1,0 +1,15 @@
+on boot
+    # touchpanel
+    chown system system /proc/touchpanel/tp_fw_update
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chown system system /proc/touchpanel/double_tap_enable
+    chown system system /proc/touchpanel/coordinate
+    chown system system /proc/touchpanel/game_switch_enable
+    chown system system /proc/touchpanel/fp_enable
+    chown system system /proc/touchpanel/baseline_test
+
+    # Disable round limit
+    write /proc/touchpanel/oplus_tp_direction 1
+
+    # DC 
+    write /sys/kernel/oppo_display/dimlayer_bl_en 1
