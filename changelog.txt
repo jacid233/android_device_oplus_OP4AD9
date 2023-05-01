@@ -12,3 +12,10 @@
    - Bluetooth audio break
    - 5G
    - Volte
+
+20230501:
+ * boot up in user build
+ * pin some blob to support volte&5G
+ * bugs:
+   - kernel inode is not write in Enforce
+   - fingerprint inscreen is not work in Enforce
