@@ -27,4 +27,30 @@
 
  - update fingerprint inscreen sensor location
 
- 
+## 20230504:
+
+### what's work
+
+ - 5G volte bluetooth Audio-bluetooth with SBC
+
+ - Autobrightness with sensor-multihal
+
+ - DC switch
+
+ - SELinux enforcing
+
+ - YOU TELL ME
+
+### bugs:
+
+ - aptX was not working
+
+ - Camera crash when take photo with force flashlight
+
+ - oplus_tp_direction IS NOT set when was Enforcing
+
+ - Flash recovery with this device-tree's build will Brick
+
+ - USB debug IS NOT running as SELinux Enforcing
+
+ - com.hicorenational.antifraud is not bypass and say device have root whatever build with user
