@@ -1,1 +1,4 @@
 set_prop(vendor_init, vendor_camera_prop)
+
+# Allow init to write touchpanel nodes
+allow init proc_touchpanel:file rw_file_perms;
