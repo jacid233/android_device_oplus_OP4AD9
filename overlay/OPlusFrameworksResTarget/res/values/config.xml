@@ -39,8 +39,8 @@
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
-        <item>550</item>  <!-- <item>sensorLocationX</item> -->
-        <item>2202</item> <!-- <item>sensorLocationY</item> -->
+        <item>540</item>  <!-- <item>sensorLocationX</item> -->
+        <item>1890</item> <!-- <item>sensorLocationY</item> -->
         <item>104</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
@@ -58,9 +58,9 @@
          the framework from using higher refresh rates, even if display modes with higher refresh
          rates are available from hardware composer. Only has an effect if the value is
          non-zero. -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
 </resources>

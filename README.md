@@ -1,27 +1,27 @@
-# Device Tree for the Realme GT Neo2 5G
+# Device configuration for OPPO Ace2
 
-The realme GT Neo2 5G (codenamed _"bitra"_) is a high-end smartphone from realme. It was announced and released in September 2021.
+The OPPO Ace2 (codenamed *"OP4AD9"*) is a high-end smartphone from OPPO.
+
+It was announced & released in April 2020.
 
 ## Device specifications
 
-| Feature               | Specification                                                                 |
-| :---------------------| :-----------------------------------------------------------------------------|
-| Chipset               | Qualcomm SM8250-AC Snapdragon 870 5G (7 nm)                                      |
-| CPU                   | Octa-core Kryo 585 (1x3.2 GHz Prime, 3x2.42 GHz Gold & 4x1.80 GHz Silver)     |
-| GPU                   | Adreno 650                                                                    |
-| Memory                | 8/12 GB LPDDR4X RAM                                                           |
-| Shipped OS            | Android 11.0 (RealmeUI 2.0)                                                   |
-| Storage               | 128/256 GB UFS 3.1                                                            |
-| SIM                   | Dual SIM (Nano-SIM, dual stand-by)                                            |
-| Battery               | 5000 mAh Li-Po (non-removable), 65W fast charge                               |
-| Dimensions            | 162.9 x 75.8 x 9 mm (6.41 x 2.98 x 0.35 in)                                   |
-| Display               | 6.62 inch, 1080 x 2400 (20:9 ratio) AMOLED, 120Hz, HDR10+                     |
-| Rear Camera           | 64MP (wide) / 8MP (ultrawide) / 2MP (macro)                                   |
-| Front Camera          | 16MP (wide)                                                                   |
-| Sensors               | Fingerprint (under display, optical), Accelerometer, Gyro, Proximity, Compass |
+| Basic                   | Spec Sheet                                                   |
+| ----------------------- | ------------------------------------------------------------ |
+| SoC                     | Qualcomm Snapdragon 865 SM8250                               |
+| CPU                     | Octa-Core (1 x 2.84 GHz Kryo 585 & 3 x 2.42 GHz Kryo 585 & 4x1.8 GHz Kryo 585) |
+| GPU                     | Adreno 650                                                   |
+| Memory                  | 8/12 GB RAM                                                  |
+| Shipped Android Version | 10.0 with ColorOS 7.1                                        |
+| Storage                 | 128/256GB                                                    |
+| Battery                 | Non-removable Li-Po 4000 mAh battery                         |
+| Display                 | 2400 x 1080 pixels, 6.5 inches, 90Hz, Super AMOLED (~402 ppi density) |
+| Rear Camera             | 48MP (wide) / 8MP (ultra-wide) / 2MP (depth) / 2MP (depth)   |
+| Front Camera            | 16MP (wide)                                                  |
+| Model                   | PDHM00                                                       |
+| OLED Model              | oppo19161samsung_amb655uv01_1080_2400_cmd                    |
+| Touch Panel             | sec-s6sy771                                                  |
 
 ## Device picture
 
-![realme GT Neo2 5G](https://cdn-files.kimovil.com/default/0006/52/thumb_551574_default_big.jpeg)
-
-Copyright (C) 2022 The LineageOS Project.
+![Ace2](https://dsfs.oppo.com/product/2020/ace2/images/parameter/phone-img1-768-41a18d9f8d94842abf4de4c74502ab87.png "Ace2")

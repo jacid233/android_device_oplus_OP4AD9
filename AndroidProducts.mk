@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_bitra.mk
+    $(LOCAL_DIR)/lineage_OP4AD9.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_bitra-user \
-    lineage_bitra-userdebug \
-    lineage_bitra-eng
+    lineage_OP4AD9-user \
+    lineage_OP4AD9-userdebug \
+    lineage_OP4AD9-eng

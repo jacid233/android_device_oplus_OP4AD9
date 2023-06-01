@@ -15,21 +15,18 @@
 #
 
 # Include the common OEM chipset BoardConfig.
-include device/realme/sm8250-common/BoardConfigCommon.mk
+include device/oplus/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/realme/bitra
+DEVICE_PATH := device/oplus/OP4AD9
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RE5473,RE879AL1,bitra
+TARGET_OTA_ASSERT_DEVICE := RE5473,RE879AL1,OP4AD9
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
-# Kernel
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
