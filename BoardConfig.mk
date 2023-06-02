@@ -24,7 +24,7 @@
 
 TARGET_BOARD_PLATFORM := kona
 
-DEVICE_PATH := device/oppo/OP4AD9
+DEVICE_PATH := device/oplus/OP4AD9
 
 # Build System
 BUILD_BROKEN_DUP_RULES := true
@@ -114,7 +114,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-TARGET_KERNEL_SOURCE := kernel/oppo/sm8250
+TARGET_KERNEL_SOURCE := kernel/oplus/sm8250
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
@@ -136,16 +136,16 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r383902
 else 
 TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := device/oppo/prebuilt-kernel/kernel
+TARGET_PREBUILT_KERNEL := device/oplus/prebuilt-kernel/kernel
 TARGET_KERNEL_CONFIG := vendor/kona-op4ad9_defconfig
 endif
 
 # prebuilt-DTB
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_PREBUILT_DTBIMAGE_DIR := device/oppo/prebuilt-kernel/dtb
+BOARD_PREBUILT_DTBIMAGE_DIR := device/oplus/prebuilt-kernel/dtb
 
 # prebuilt dtbo.img
-BOARD_PREBUILT_DTBOIMAGE := device/oppo/prebuilt-kernel/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := device/oplus/prebuilt-kernel/dtbo.img
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650

@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/oppo/OP4AD9/OP4AD9-vendor.mk)
+$(call inherit-product, vendor/oplus/OP4AD9/OP4AD9-vendor.mk)
 
 # Inherit from MindTheGApps
 ifeq ($(WITH_GAPPS), true)
@@ -286,7 +286,7 @@ PRODUCT_COPY_FILES += \
 # Kernel
 ifeq ($(PREBUILT_KERNEL_MODULES),true)
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/oppo/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    $(call find-copy-subdir-files,*,device/oplus/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
 endif
     
 # Keylayout
@@ -349,7 +349,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oppo/OP4AD9
+    device/oplus/OP4AD9
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \

@@ -18,7 +18,7 @@
 set -e
 
 DEVICE=OP4AD9
-VENDOR=oppo
+VENDOR=oplus
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
