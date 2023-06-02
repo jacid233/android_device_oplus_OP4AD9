@@ -1,4 +1,4 @@
-$(call inherit-product, vendor/oppo/OP4AD9/OP4AD9-vendor.mk)
+$(call inherit-product, vendor/oplus/OP4AD9/OP4AD9-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 # kernel modules
 ifeq ($(PREBUILT_KERNEL_MODULES),true)
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/oppo/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules)
+    $(call find-copy-subdir-files,*,device/oplus/prebuilt-kernel/modules/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/lib/modules)
 endif
 
 # Overlays - override vendor ones
