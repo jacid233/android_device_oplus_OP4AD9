@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=realme X50 Pro 5G
+bluetooth.device.default_name=OPPO Ace2
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
@@ -9,4 +9,4 @@ ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 
 # USB
-vendor.usb.product_string=realme X50 Pro 5G
+vendor.usb.product_string=OPPO Ace2

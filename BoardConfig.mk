@@ -15,18 +15,15 @@
 #
 
 # Include the common OEM chipset BoardConfig.
-include device/realme/sm8250-common/BoardConfigCommon.mk
+include device/oplus/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/realme/bladerunner
+DEVICE_PATH := device/oplus/OP4AD9
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2071L1,RMX2075L1,RMX2076L1,bladerunner
+TARGET_OTA_ASSERT_DEVICE := RMX2071L1,RMX2075L1,RMX2076L1,bladerunner,OP4AD9
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
-# Kernel
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

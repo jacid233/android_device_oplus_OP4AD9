@@ -15,16 +15,13 @@
 #
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/realme/sm8250-common/common.mk)
+$(call inherit-product, device/oplus/sm8250-common/common.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/realme/bladerunner/bladerunner-vendor.mk)
+$(call inherit-product, vendor/oplus/OP4AD9/OP4AD9-vendor.mk)
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
-
-# Audio
-TARGET_HAS_AUDIO_LVIMFS := false
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
@@ -44,4 +41,4 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/realme/bladerunner
+    device/oplus/OP4AD9
