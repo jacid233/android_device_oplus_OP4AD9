@@ -10,6 +10,9 @@ odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
+# Audio libraries
+vendor/lib/hw/audio.primary.kona.so
+
 # Camera
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/hi846
@@ -109,6 +112,9 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+
+# Listen
+vendor/lib/hw/sound_trigger.primary.kona.so
 
 # NFC
 odm/etc/nfc/libnfc-mtp-SN100.conf_19161:vendor/etc/libnfc-nxp.conf
