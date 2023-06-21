@@ -32,12 +32,12 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -544,0 L -544,107 L -270,107 L -270,0 Z</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -544,0 L -544,107 L -400,107 L -400,0 Z</string>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
-        <item>539</item>  <!-- <item>sensorLocationX</item> -->
-        <item>2165</item> <!-- <item>sensorLocationY</item> -->
+        <item>540</item>  <!-- <item>sensorLocationX</item> -->
+        <item>1890</item> <!-- <item>sensorLocationY</item> -->
         <item>96</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
@@ -46,5 +46,11 @@
          rates are available from hardware composer. Only has an effect if the value is
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
+
+    <!-- Remote server that can provide NTP responses. -->
+    <string translatable="false" name="config_ntpServer">time.apple.com</string>
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
 
 </resources>

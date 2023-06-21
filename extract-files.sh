@@ -15,6 +15,10 @@ function blob_fixup() {
             sed -i 's|LOGLEVEL=0x03|LOGLEVEL=0x01|g' "${2}"
             sed -i 's|NFC_DEBUG_ENABLED=1|NFC_DEBUG_ENABLED=0x00|g' "${2}"
             ;;
+        vendor/etc/libnfc-nxp-19161.conf)
+            sed -i 's|LOGLEVEL=0x03|LOGLEVEL=0x01|g' "${2}"
+            sed -i 's|NFC_DEBUG_ENABLED=1|NFC_DEBUG_ENABLED=0x00|g' "${2}"
+            ;;
         vendor/etc/libnfc-nxp-19795.conf)
             sed -i 's|LOGLEVEL=0x03|LOGLEVEL=0x01|g' "${2}"
             sed -i 's|NFC_DEBUG_ENABLED=1|NFC_DEBUG_ENABLED=0x00|g' "${2}"
@@ -30,8 +34,8 @@ fi
 
 set -e
 
-export DEVICE=bladerunner
+export DEVICE=op4ad9
 export DEVICE_COMMON=sm8250-common
-export VENDOR=realme
+export VENDOR=oplus
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

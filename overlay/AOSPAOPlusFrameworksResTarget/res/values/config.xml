@@ -17,6 +17,6 @@
 <resources>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">realme/RMX2076/RMX2076L1:12/RKQ1.211103.002/Q.e3b1e0_c-490d:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">OPPO/PDHM00/OP4AD9:12/RKQ1.211103.002/Q.202205181608:user/release-keys</string>
 
 </resources>
