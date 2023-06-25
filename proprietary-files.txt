@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OPPO Ace2 (PDHM00_11.F.09).
+## from OPPO Ace2 (PDHM00_11.H.21).
 
 # ACDB
 odm/etc/acdbdata/Bluetooth_cal.acdb
@@ -15,6 +15,7 @@ vendor/lib/hw/audio.primary.kona.so
 
 # Camera
 odm/etc/camera/config/camera_unit_config
+odm/etc/camera/config/camera_unit_feature_config.protobuf
 odm/etc/camera/config/hi846
 odm/etc/camera/config/imx471
 odm/etc/camera/config/imx586
@@ -122,6 +123,7 @@ odm/etc/nfc/libnfc-nci.conf_19161:vendor/etc/libnfc-nci.conf
 odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
 
 # Sensors
+odm/etc/sensor/config/kona_bu52053nvx_0.json
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
 odm/etc/sensor/config/kona_qrd_cct.json
 odm/etc/sensor/config/kona_qrd_cct_rear.json
