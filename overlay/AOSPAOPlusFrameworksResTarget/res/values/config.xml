@@ -17,6 +17,6 @@
 <resources>
 
     <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">OPPO/PDHM00/OP4AD9:12/RKQ1.211103.002/Q.202205181608:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">OPPO/PDHM00/OP4AD9:13/TP1A.220905.001/Q.ead5fa-1-64aa:user/release-keys</string>
 
 </resources>
