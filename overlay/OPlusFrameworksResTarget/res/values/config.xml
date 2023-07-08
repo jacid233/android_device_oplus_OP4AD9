@@ -64,7 +64,7 @@
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
         <item>540</item>  <!-- <item>sensorLocationX</item> -->
-        <item>2192</item> <!-- <item>sensorLocationY</item> -->
+        <item>1890</item> <!-- <item>sensorLocationY</item> -->
         <item>94</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
@@ -72,9 +72,9 @@
          the framework from using higher refresh rates, even if display modes with higher refresh
          rates are available from hardware composer. Only has an effect if the value is
          non-zero. -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
  <!-- Fingerprint from stock ROM -->
-    <string name="config_stockFingerprint" translatable="false">realme/RMX3370/RE879AL1:12/RKQ1.211103.002/R.202209132115:user/release-keys</string>
+    <string name="config_stockFingerprint" translatable="false">OPPO/PDHM00/OP4AD9:13/TP1A.220905.001/Q.ead5fa-1-64aa:user/release-keys</string>
 
 </resources>

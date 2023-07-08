@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bitra.mk
+    $(LOCAL_DIR)/aosp_OP4AD9.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_bitra-user \
-    aosp_bitra-userdebug \
-    aosp_bitra-eng
+    aosp_OP4AD9-user \
+    aosp_OP4AD9-userdebug \
+    aosp_OP4AD9-eng

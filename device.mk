@@ -15,13 +15,17 @@
 #
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/realme/sm8250-common/common.mk)
+$(call inherit-product, device/oplus/sm8250-common/common.mk)
 
 # Inherit proprietary libraries
-$(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
+$(call inherit-product, vendor/oplus/OP4AD9/OP4AD9-vendor.mk)
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Display
+PRODUCT_PACKAGES += \
+    disable_configstore
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -46,5 +50,5 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/realme/bitra \
+    device/oplus/OP4AD9 \
     vendor/ih8sn
