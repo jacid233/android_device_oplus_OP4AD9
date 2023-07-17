@@ -24,7 +24,7 @@ $(call inherit-product, vendor/oplus/OP4AD9/OP4AD9-vendor.mk)
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Audio
-TARGET_HAS_AUDIO_LVIMFS := true
+TARGET_HAS_AUDIO_LVIMFS := false
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_platform_info.xml \
