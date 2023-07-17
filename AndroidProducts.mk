@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_bitra.mk
+    $(LOCAL_DIR)/lineage_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_bitra-user \
-    arrow_bitra-userdebug \
-    arrow_bitra-eng
+    lineage_bitra-user \
+    lineage_bitra-userdebug \
+    lineage_bitra-eng
