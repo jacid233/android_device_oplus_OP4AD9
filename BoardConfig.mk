@@ -15,12 +15,12 @@
 #
 
 # Include the common OEM chipset BoardConfig.
-include device/realme/sm8250-common/BoardConfigCommon.mk
+include device/oplus/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/realme/bitra
+DEVICE_PATH := device/oplus/OP4AD9
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RE5473,RE879AL1,bitra
+TARGET_OTA_ASSERT_DEVICE := OP4AD9
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml

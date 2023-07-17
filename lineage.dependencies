@@ -1,10 +1,10 @@
 [
   {
-    "repository": "android_device_realme_sm8250-common",
-    "target_path": "device/realme/sm8250-common"
+    "repository": "android_device_oplus_sm8250-common",
+    "target_path": "device/oplus/sm8250-common"
   },
   {
-    "repository": "android_vendor_realme_bitra",
-    "target_path": "vendor/realme/bitra"
+    "repository": "android_vendor_oplus_OP4AD9",
+    "target_path": "vendor/oplus/OP4AD9"
   }
 ]
