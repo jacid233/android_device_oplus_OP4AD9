@@ -10,6 +10,6 @@ set -e
 
 export DEVICE=OP4AD9
 export DEVICE_COMMON=sm8250-common
-export VENDOR=oppo
+export VENDOR=oplus
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
