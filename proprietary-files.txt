@@ -10,6 +10,18 @@ odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
+# ADSP Modules
+odm/lib/rfsa/adsp/capi_v2_dap_cpdp.so
+odm/lib/rfsa/adsp/libktvdrc.so
+odm/lib/rfsa/adsp/libktveffect.so
+odm/lib/rfsa/adsp/libktveq.so
+odm/lib/rfsa/adsp/libktvns.so
+odm/lib/rfsa/adsp/libktvpitchshift.so
+odm/lib/rfsa/adsp/libktvreverb.so
+odm/lib/rfsa/adsp/libktvvolume.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+
 # Audio libraries
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
@@ -58,7 +70,6 @@ odm/vendor/firmware/goodixfp.b04
 odm/vendor/firmware/goodixfp.b05
 odm/vendor/firmware/goodixfp.b06
 odm/vendor/firmware/goodixfp.b07
-odm/vendor/firmware/goodixfp.mdt
 odm/vendor/firmware/goodixfp_G6.b00
 odm/vendor/firmware/goodixfp_G6.b01
 odm/vendor/firmware/goodixfp_G6.b02
