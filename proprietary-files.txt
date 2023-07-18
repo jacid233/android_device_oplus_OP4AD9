@@ -61,6 +61,10 @@ odm/firmware/fastchg/charging_thermal_config_default.txt
 vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
 
+# Display eye protection data
+odm/etc/samsung1024_amb655uv01_eyeprotect_data.xml
+odm/etc/samsung1024_amb655uv01_srgb_eyeprotect_data.xml
+
 # Fingerprint firmware
 odm/vendor/firmware/goodixfp.b00
 odm/vendor/firmware/goodixfp.b01
@@ -108,6 +112,7 @@ odm/etc/nfc/libnfc-nci.conf_19161:vendor/etc/libnfc-nci.conf
 odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
 
 # Sensors
+odm/etc/sensor/config/kona_bu52053nvx_0.json
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
 odm/etc/sensor/config/kona_qrd_cct.json
 odm/etc/sensor/config/kona_qrd_cct_rear.json
@@ -122,6 +127,17 @@ odm/firmware/tp/19161/FW_S6SY771_SAMSUNG.bin
 odm/firmware/tp/19161/FW_S6SY771_SAMSUNG_FAE.bin
 odm/firmware/tp/19161/LIMIT_S3908_BOE.img
 odm/firmware/tp/19161/LIMIT_S6SY771_SAMSUNG.img
+
+# Widevine firmware
+odm/vendor/firmware/widevine.b00
+odm/vendor/firmware/widevine.b01
+odm/vendor/firmware/widevine.b02
+odm/vendor/firmware/widevine.b03
+odm/vendor/firmware/widevine.b04
+odm/vendor/firmware/widevine.b05
+odm/vendor/firmware/widevine.b06
+odm/vendor/firmware/widevine.b07
+odm/vendor/firmware/widevine.mdt
 
 # Wifi
 odm/etc/wifi/bdwlan.elf
