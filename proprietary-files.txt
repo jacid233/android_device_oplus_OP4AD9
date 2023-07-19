@@ -46,6 +46,10 @@ odm/firmware/fastchg/charging_thermal_config_default.txt
 vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
 
+# Display eye protection data
+odm/etc/samsung1024_amb655uv01_eyeprotect_data.xml
+odm/etc/samsung1024_amb655uv01_srgb_eyeprotect_data.xml
+
 # fingerprint
 odm/vendor/firmware/alipay.b00
 odm/vendor/firmware/alipay.b01
