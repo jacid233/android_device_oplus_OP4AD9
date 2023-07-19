@@ -1,0 +1,20 @@
+20030717:
+FAILED: 
+build/make/core/main.mk:1312: warning:  device/oplus/OP4AD9/lineage_OP4AD9.mk includes non-existent modules in PRODUCT_PACKAGES
+Offending entries:
+TetheringConfigOverlay
+WifiOverlay
+android.hardware.gnss@2.1-impl-qti
+libbthost_if
+libdisplayconfig.qti.vendor
+libhdmipassthru
+build/make/core/main.mk:1312: error: Build failed.
+19:54:12 ckati failed with: exit status 1
+
+20230718 for H.21:
+F linker  : CANNOT LINK EXECUTABLE "/vendor/bin/hw/qcrild": library "vendor.qti.hardware.radio.ims@1.7.so" not found: needed by /vendor/lib64/libril-qc-hal-qmi.so in namespace (default)
+E vndksupport: Could not load /vendor/lib64/hw/camera.qcom.so from default namespace: dlopen failed: library "vendor.oplus.hardware.osense.client@1.0.so" not found: needed by /vendor/lib64/hw/camera.qcom.so in namespace (default).
+F linker  : CANNOT LINK EXECUTABLE "/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service": library "vendor.oplus.hardware.osense.client@1.0.so" not found: needed by main executable
+F DEBUG   : Abort message: 'Loading imsrcsbaseimpl fails[dlopen failed: library "vendor.qti.ims.factory@1.1.so" not found: needed by /vendor/lib64/lib-imsrcsbaseimpl.so in namespace (default)]'
+F imsrcsd : imsrcsd.cpp:70] Loading imsrcsbaseimpl fails[dlopen failed: library "vendor.qti.ims.factory@1.1.so" not found: needed by /vendor/lib64/lib-imsrcsbaseimpl.so in namespace (default)]
+F linker  : CANNOT LINK EXECUTABLE "/system/vendor/bin/cnd": library "vendor.qti.data.factory@2.3.so" not found: needed by main executable
