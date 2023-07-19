@@ -127,5 +127,16 @@ odm/firmware/aw8697_haptic_170.bin
 odm/firmware/aw8697_haptic_235_19161.bin
 odm/firmware/aw8697_haptic_235.bin
 
+# Widevine firmware
+odm/vendor/firmware/widevine.b00
+odm/vendor/firmware/widevine.b01
+odm/vendor/firmware/widevine.b02
+odm/vendor/firmware/widevine.b03
+odm/vendor/firmware/widevine.b04
+odm/vendor/firmware/widevine.b05
+odm/vendor/firmware/widevine.b06
+odm/vendor/firmware/widevine.b07
+odm/vendor/firmware/widevine.mdt
+
 # Wifi
 odm/etc/wifi/bdwlan.elf
