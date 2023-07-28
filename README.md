@@ -100,7 +100,7 @@ git clone -b topaz-865 https://github.com/AOSPA/android_hardware_qcom_audio.git 
 ```bash
 git clone -b topaz-865 https://github.com/AOSPA/android_hardware_qcom_display.git display
 
-git clone -b topaz-865 https://github.com/AOSPA/android_hardware_qcom_gps.git gps
+git clone -b topaz-legacy-component https://github.com/AOSPA/android_hardware_qcom_gps.git gps
 
 git clone -b topaz-865 https://github.com/AOSPA/android_hardware_qcom_media.git media
 
