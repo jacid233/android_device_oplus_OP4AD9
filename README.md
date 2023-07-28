@@ -74,7 +74,7 @@ git clone -b topaz git@github.com:jacid233/android_device_oplus_sm8250-common.gi
 在 `hardware` 目录克隆以下文件,主要是提供某些hal,sepolicy等内容
 
 ```bash
-git clone -b new-topaz git@github.com:jacid233/android_hardware_oplus.git oplus
+git clone -b topaz git@github.com:jacid233/android_hardware_oplus.git oplus
 ```
 
 在 `kernel` 目录克隆内核源码
