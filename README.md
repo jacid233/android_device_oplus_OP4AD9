@@ -80,7 +80,7 @@ git clone -b topaz git@github.com:jacid233/android_hardware_oplus.git oplus
 在 `kernel` 目录克隆内核源码
 
 ```bash
-git clone -b topaz git@github.com:jacid233/android_kernel_oplus_sm8250.git msm-4.19
+git clone -b new-topaz git@github.com:jacid233/android_kernel_oplus_sm8250.git msm-4.19
 ```
 
 在 `vendor` 目录，克隆厂商 `blob` 相关文件
