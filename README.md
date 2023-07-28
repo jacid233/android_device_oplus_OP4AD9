@@ -83,6 +83,17 @@ git clone -b topaz git@github.com:jacid233/android_hardware_oplus.git oplus
 git clone -b new-topaz git@github.com:jacid233/android_kernel_oplus_sm8250.git msm-4.19
 ```
 
+在 `kernel/msm-4.19/arch/arm64/boot/dts/vendor` 目录下添加 `dts` 
+
+```bash
+git clone -b topaz https://github.com/jacid233/19161-dts/tree/topaz 19161
+```
+然后在 `kernel/msm-4.19/arch/arm64/boot/dts/vendor/Makefile` 文件添加 `19161` 的 `dts` 编译选项
+
+```bash
+subdir-y += 19161
+```
+
 在 `vendor` 目录，克隆厂商 `blob` 相关文件
 
 ```bash
