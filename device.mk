@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oplus/OP4AD9
