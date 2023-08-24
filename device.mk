@@ -20,6 +20,14 @@ $(call inherit-product, device/oplus/sm8250-common/common.mk)
 # Inherit proprietary libraries
 $(call inherit-product, vendor/oplus/OP4AD9/OP4AD9-vendor.mk)
 
+# Inherit from MindTheGApps
+ifeq ($(WITH_GAPPS), true)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+TARGET_UNOFFICIAL_BUILD_ID += Gapps
+else
+TARGET_UNOFFICIAL_BUILD_ID += Vanilla
+endif
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
