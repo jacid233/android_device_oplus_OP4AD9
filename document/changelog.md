@@ -25,3 +25,33 @@
    - IMEI
    - AUX camera
    - autobrightness
+
+20230721:
+ - remove camera2
+ - Add Aperture camera
+ - Use libcamera_metadata_shim for unlocking cameras
+ - bugs:
+   - IMEI
+   - AUX camera
+   - autobrightness
+
+20230722:
+ - repo sync upstream
+ - stop patching libui.so
+ - Enable burn-in protection
+ - set captive-portal for China
+ - Add nosdcard to product charateristics
+ - Remove vendor RenderScript implementation
+ - Add stmvl53l1 TOF sensor support
+ - Add missing OPlus Nama camera blobs 
+ - bugs:
+   - IMEI
+   - AUX camera
+   - autobrightness
+
+20230821:
+ - overlay useless camera IDs
+ - fix IMEI display in enforcing
+ - bugs:
+   - Powershare
+   - wireless charge
