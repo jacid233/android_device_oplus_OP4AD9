@@ -28,6 +28,11 @@ else
 TARGET_UNOFFICIAL_BUILD_ID += Vanilla
 endif
 
+# Inherit preinstall app
+ifeq ($(MY_StUFF), true)
+$(call inherit-product, vendor/preinstall/install/install-vendor.mk)
+endif
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
