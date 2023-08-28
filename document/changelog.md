@@ -52,6 +52,24 @@
 20230821:
  - overlay useless camera IDs
  - fix IMEI display in enforcing
+ - build lineage health hal
  - bugs:
    - Powershare
    - wireless charge
+
+20230824:
+ - kang display cutout from lemonades to adapt status bar
+ - bugs:
+   - otg switch
+   - PowerShare
+   - wireless charge
+
+20230825:
+ - build with user
+ - signed with release-kay
+ - Add GAPPS
+ - bugs:
+   - otg switch
+   - PowerShare
+   - wireless charge
+   - Front camera
