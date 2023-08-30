@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
+#DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Soong namespaces
