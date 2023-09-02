@@ -73,3 +73,10 @@
    - PowerShare
    - wireless charge
    - Front camera
+
+20230901:
+  - PixelExperience bringup
+  - remove QTI thermal
+  - reserve 100MiB size in each sub-partition for super
+  - Add prebuilt kernel, dtb, dtbo flags
+  - fix some PE sepolicy 
