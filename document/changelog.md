@@ -80,3 +80,19 @@
   - reserve 100MiB size in each sub-partition for super
   - Add prebuilt kernel, dtb, dtbo flags
   - fix some PE sepolicy 
+  
+20230902:
+  - remove persist.bluetooth.a2dp_offload.cap
+  - Optimize native executables for Cortex-A76 CPU
+  - Move VOOC-related writes back to init
+  - Disable serial console notification
+  - Use stop instead of setprop for console
+  - fix active wlan interfaces
+
+20230904:
+  - build with oss kernel & dtbs
+  - Silence FastChargingPreferenceController 
+  - switch dalvik-heap device configs for 8 GiB devices 
+  - fix some selinux denials
+  - bugs:
+    - fast charge in shutdown
